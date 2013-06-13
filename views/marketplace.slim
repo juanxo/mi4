@@ -1,0 +1,77 @@
+h2 Marketplace
+
+p
+  |This tool allows you to easily build custom marketplaces, perfect for fast boostraping new
+    projects or custom demos
+
+p
+  |Select a marketplace from the list below:
+
+div.marketplace
+  select name="marketplace"
+    option value="marketplace01" Telefonica Spain
+    option value="marketplace02" O2 Ireland
+    option value="marketplace03" Telefonica Argentina
+
+  p#marketplace01.mkp-description
+    |marketplace used in spain (<a href="http://www.aplicateca.es">Aplicateca</a>)
+  p#marketplace02.mkp-description.hidden
+    |marketplace used in Ireland
+  p#marketplace03.mkp-description.hidden
+    |marketplace used in Argentina
+
+hr
+
+p
+  |Select any ISV you want to add to the marketplace:
+div.isv
+  div.isv-list.pull-left
+    label
+      input type="checkbox" name="seguimiento-gps" value="seguimiento-gps"
+      |SeguimientoGPS
+    label
+      input type="checkbox" name="facturclick" value="facturclick"
+      |FacturClick
+    label
+      input type="checkbox" name="contaonline" value="contaonline"
+      |ContaOnline
+    label
+      input type="checkbox" name="spontania" value="spontania"
+      |Spontania
+    label
+      input type="checkbox" name="mcafee" value="mcafee"
+      |McAfee
+
+  div.isv-description.hidden
+    h3 Description
+    p data-name="seguimiento-gps"
+      | This isv sucks, a lot. But surprisingly, people use it... Some people just want to watch the
+        world burn
+
+    p data-name="facturclick"
+      | Facturclick es una aplicación perfecta para los profesionales autónomos. No sólo le permite emitir sus
+        facturas y presupuestos de manera sencilla; Con Facturclick también puede almacenar, consultar, ordenar,
+        editar y modificar la información; copiar los datos para no tener que volver a introducirlos y agilizar
+        así el proceso; controlar los pagos pendientes; generar las facturas y proformas en formato PDF;
+        y exportar los datos para que los pueda llevar adonde necesite.
+
+    p data-name="contaonline"
+      | A través de un entorno fácil e intuitivo, podrá acceder a la gestión de asientos, obtener su información
+        contable a través de los Libros Diario y Mayor, y su información fiscal por medio del listado de Facturas
+        y Operaciones con terceros. <br>ContaOnline es una aplicación 100% Online y por tanto no requiere de la
+        instalación de ningún software en el PC, esto nos permite que se pueda acceder desde cualquier lugar.
+
+
+    p data-name="spontania"
+      | La plataforma Spontania es una solución de software de oficina adaptable, diseñada a escala y fácil de administrar,
+        que permite celebrar sesiones interactivas entre muchos participantes mediante sistemas de voz, de vídeo y de
+        intercambio de datos empleando los dispositivos más comunes—PCs, PDAs, teléfonos móviles, teléfonos fijos,
+        H.323/4 y dispositivos SIP.
+
+    p data-name="mcafee
+      | Protección completa contra todo tipo de amenazas: Antivirus, Firewall, Site Advisor y Filtrado url.
+        Incluye un Centro de Seguridad y un Agente, que se instala en cada PC en un solo click.
+
+
+
+

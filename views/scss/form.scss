@@ -1,0 +1,16 @@
+select {
+  padding: 3px;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  padding-left: 18px;
+  margin-top: 1.5em;
+}
+
+label > input[type="checkbox"] {
+  cursor: pointer;
+  float: left;
+  margin-left: -18px;
+}

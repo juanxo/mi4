@@ -1,0 +1,49 @@
+@import "globals/colors";
+
+a {
+  color: #333;
+}
+
+#header {
+  background-color: $menuBackground;
+  a, h1 {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+#footer {
+  background-color: $menuBackground;
+  color: #fff;
+  &> p {
+    margin: 0;
+  }
+}
+
+.menu > li > a:hover {
+  background-color: rgba(220,220,220,0.3);
+}
+
+
+blockquote {
+  &>p, &>small {
+    color: $darkGrey;
+  }
+}
+
+#js-alert {
+  background: #981913 url('/images/alert-pattern.png') repeat-x left top;
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(31, 31, 31, 0.8);
+}
+
+.notice {
+  background-color: rgba(200, 230, 250, 0.4);
+
+}
+

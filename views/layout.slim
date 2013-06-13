@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    title== @title
+    link rel="stylesheet" type="text/css" media="all" href="/css/normalize.css"
+    link href="http://fonts.googleapis.com/css?family=Six+Caps|Stint+Ultra+Condensed|Aguafina+Script" rel="stylesheet" type="text/css"
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("layout")
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("fonts")
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("colors")
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("form")
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("misc")
+    link rel="stylesheet" type="text/css" media="all" href==versioned_stylesheet("links")
+
+  body
+
+    div#header
+      div.center
+        h1.pull-right NEC
+        a href="/" alt="Becario Macho 4"
+          | Becario Macho 4
+    div#wrapper
+      ul.menu.sidebar.pull-left
+        li
+          a href="/marketplace" Marketplace
+          hr
+        li
+          a href="#js-alert" data-type="docs" Print docs
+          hr
+        li
+          a href="#js-alert" data-type="coffee" Bring coffee
+      div#content
+        ==yield
+        div#closing.clear
+
+
+    div#footer
+      div.center
+        p.pull-right
+          | Created by <span class="hand-writing">Juan Guerrero</span> (a.k.a 'Becario Macho 3')
+
+    div.overlay.hidden
+      div#js-alert.hidden
+        div#docs
+          img src="/images/printer.png" alt="printer"
+          p Do you really think interns have enough time to print your docs?
+          p Actually, they are busy cleaning the shit you all seniors make
+          p By the way, don't you know interns are the real leaders in NEC?
+
+        div#coffee
+          img src="/images/coffee.png" alt="coffee"
+          p
+            | I have more important things to do than dealing with your inability to do your own
+              coffee.
+          p Now go and grab me some coffee, I'm busy...
+
+
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"
+    script src==versioned_script("alerts") type="text/javascript"
+    script src==versioned_script("isv_description") type="text/javascript"
